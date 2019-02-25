@@ -1,0 +1,66 @@
+SRS 
+Software Requirements
+
+1.0.	Introduction
+1.1.	Purpose
+The purpose of this document is to present a detailed description of SoftUni Blog application (hereinafter simply Project). 
+It will explain some of the key features at very high level.
+1.2.	Scope
+The document will cover the basic functionality on high level regarding the SoftUni Blog. The user-management system, the article creation and 
+operation and its respective details. The administrative part – what the administer user can and cannot do as well as the register and unregister user.
+
+2.0.	Overall description
+
+2.1.	System environment
+The SoftUni Blog has two active actors and one cooperating system. All of them are accessing their parts from the internet. The Unregistered user 
+can access the basic functionality of the project. One can view article. The Registered user can access some of the basic crud operations over the 
+article. One can create article, edit and delete his own articles.
+ 
+2.2.Vocabulary
+
+2.3.Functional requirement specification
+
+2.3.1.	Accessing the system
+The system is accessed through the internet from its initial URL. It loads header, navigation bar and a home page
+
+2.3.2.	Navigation bar
+
+	2.3.2.1.	User is unregister
+	When the visitor is unregistered, hyperlinks navigating to the Login and Register page should be present.
+ 
+	2.3.2.2.	User is register
+	When the visitor is registered or administrator a hyperlinks navigating to “Create(new article) page”, “Hello user(manage) page” and the 
+	“Logoff page” should be present instead. When user is successfully logged out, there should be a redirect to the home page.
+
+2.3.3.	Home page
+The home page shows created blocks.
+
+2.3.4.	Register user:
+
+	2.3.4.1.	Create Article
+	Clicking on Create hyperlink from the header, if the user is logged in, navigates to a form where user can enter unique Article Title and write an 
+	Article content in the content textarea. If the fields are empty, a friendly message is shown, that they are empty. Else new Article appears in 
+	the main page
+	
+	2.3.4.2.	 Edit own article
+
+	2.3.4.3.	 Delete own article
+
+	2.3.4.4.	Manage profile
+	Clicking on “Users name” hyperlink from the header, navigates to Manage page. In the Manage page should be present link for “Changing your
+	password” which leads to a form where user can change his password. The form include fields for the old password, the new one and a field where 
+	the new password should be confirmed. If the fields are empty, a friendly message is shown, that they are empty. If some of the field is not 
+	correct, a friendly message is shown, that they are incorrect. Else the password is changed.
+	
+	2.3.4.5.	Log out 
+	Clicking on “Log out” hyperlink from the header, navigates to Home page. The visitor is unregistered, hyperlinks navigating to the Login and 
+	Register page should be present. 
+
+	2.3.4.6.	Log in
+	Clicking on “Log in” hyperlink from the header, navigates to Login page. Where user can enter an e-mail and a password in the textareas.There 
+	should be provided “Remember me option” and submit button called “Log in”.  If the fields are empty, a friendly message is shown, that input is
+	required. Else user is logged in.
+
+
+
+2.3.5.	Unregister user
